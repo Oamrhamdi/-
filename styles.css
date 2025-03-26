@@ -1,0 +1,166 @@
+body {
+    font-family: 'Tajawal', sans-serif; /* خط حديث */
+    background-color: #1a1a1a; /* خلفية سوداء */
+    color: #f5f5dc; /* لون نص مصفر */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png'); /* خلفية خشبية */
+}
+
+header {
+    background-color: #333;
+    color: #f5f5dc;
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 10px 0 0;
+    font-weight: 400;
+}
+
+main {
+    padding: 20px;
+    text-align: right;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+ul li strong {
+    color: #f5f5dc;
+}
+
+a {
+    color: #ffcc00; /* لون روابط مصفر */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff9900; /* لون روابط مصفر داكن عند التمرير */
+}
+
+/* تنسيقات Footer والأيقونات */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* خلفية شبه شفافة */
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.section-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #f5f5dc;
+    flex: 1 1 100px; /* يجعل الأيقونات متجاوبة */
+}
+
+.section-item:hover {
+    transform: scale(1.1);
+    color: #ffcc00; /* لون مصفر عند التمرير */
+}
+
+.section-item i {
+    font-size: 24px;
+}
+
+.section-item span {
+    font-size: 14px;
+}
+
+/* زر تبديل اللغة */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-switcher button {
+    background-color: #333;
+    color: #f5f5dc;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.language-switcher button:hover {
+    background-color: #555;
+}
+
+/* تجربة مستخدم على الأجهزة المحمولة */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .section-item {
+        flex: 1 1 80px; /* يجعل الأيقونات أصغر على الشاشات الصغيرة */
+    }
+
+    .section-item i {
+        font-size: 20px;
+    }
+
+    .section-item span {
+        font-size: 12px;
+    }
+
+    .language-switcher {
+        top: 10px;
+        right: 10px;
+    }
+
+    .language-switcher button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
